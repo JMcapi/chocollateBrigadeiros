@@ -111,6 +111,75 @@ nav {
 }
 
 
+@media(max-width:900px) {
+
+    .containerNav1 {
+        position: absolute;
+        top: 7vh;
+        right: 0;
+        width: 60vw;
+        height: 92vh;
+        background: #80132a;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        opacity: 0;
+        transition: .5s ease-in-out;
+    }
+
+
+    .logoContainer{
+        justify-content: center;
+        margin-left:32px;
+    }
+
+
+    .containerNav1.active {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .containerNav1 a {
+        margin: 0;
+        opacity: 0;
+    }
+
+    .mobileMenu {
+        display: block;
+       margin-left: auto;
+    }
+
+
+
+    .mobileMenu.active .line1 {
+        transform: rotate(-45deg) translate(-8px, 8px);
+    }
+
+    .mobileMenu.active .line2 {
+        opacity: 0;
+    }
+
+    .mobileMenu.active .line3 {
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
+
+
+
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+}
+
 
 
 
@@ -398,28 +467,7 @@ background-color: #9F132A;
 
 }
 
-@media(max-width:1440px) {
-    .degustButton{
-        margin-top:0;
-        width: 100px;
-        height:40px;
-    }
-    .foodContainer h1 {
-        font-size: 30px;
-    }
 
-    .titleC h1 {
-       
-        font-size: 45px;
-        text-shadow: 2px 2px black;
-    }
-
-    .imgCont h1 {
-        font-size: 80px;
-        margin: 0;
-        text-shadow: 1px 1px black;
-    }
-}
 
 
 
@@ -693,7 +741,11 @@ footer a{
 /*AJUSTE FINAL media*/
 
 
-@media(max-width:900px) {
+
+
+
+@media(max-height:900px){
+   
     .home h1 {
         text-shadow: 1px 1px black;
     }
@@ -706,92 +758,19 @@ footer a{
         width: 100px;
         height: 40px;
     }
-
-    .containerNav1 {
-        position: absolute;
-        top: 7vh;
-        right: 0;
-        width: 60vw;
-        height: 92vh;
-        background: #80132a;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        transform: translateX(100%);
-        opacity: 0;
-        transition: .5s ease-in-out;
-    }
-
-
-    .logoContainer{
-        justify-content: center;
-        margin-left:32px;
-    }
-
-
-    .containerNav1.active {
-        transform: translateX(0);
-        opacity: 1;
-    }
-
-    .containerNav1 a {
-        margin: 0;
-        opacity: 0;
-    }
-
-    .mobileMenu {
-        display: block;
-       margin-left: auto;
-    }
-
-
-
-    .mobileMenu.active .line1 {
-        transform: rotate(-45deg) translate(-8px, 8px);
-    }
-
-    .mobileMenu.active .line2 {
-        opacity: 0;
-    }
-
-    .mobileMenu.active .line3 {
-        transform: rotate(45deg) translate(-5px, -7px);
-    }
-
-
-
-
-    @keyframes navLinkFade {
-        from {
-            opacity: 0;
-            transform: translateX(50px);
-        }
-
-        to {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
-}
-
-
-
-
-@media(max-height:900px){
-   
+    
     .cardapio{
         height:900px;
     }
-#explain{
+
+    #explain{
     font-size: 15px;
 }
-    .containerNav1{
-        height: 15px;
-    }
     
     .contactContainer{
         height: 800px;
     }
+
     .cardfb p{
         font-size: 13px;
     }
@@ -799,6 +778,7 @@ footer a{
     .buttonsAbout{
         margin-top: 10px;
     }
+
     .containerAbouttxt p{
         margin-top: 30px;
         font-size: 20px;
@@ -996,6 +976,11 @@ align-items: center;
 }
 
 
+
+
+
+
+
 @media(max-width:1370px){
     .feedbackBG{
         height:100vh    ;
@@ -1007,10 +992,36 @@ align-items: center;
     .contactContainer{
         height:600px
     }
+
+    
 }
 
 @media(max-width:1340px){
     .feedbackBG{
         height:1000px;
+    }
+}
+
+
+@media(max-width:1440px) {
+    .degustButton{
+        margin-top:0;
+        width: 100px;
+        height:40px;
+    }
+    .foodContainer h1 {
+        font-size: 30px;
+    }
+
+    .titleC h1 {
+       
+        font-size: 45px;
+        text-shadow: 2px 2px black;
+    }
+
+    .imgCont h1 {
+        font-size: 80px;
+        margin: 0;
+        text-shadow: 1px 1px black;
     }
 }
