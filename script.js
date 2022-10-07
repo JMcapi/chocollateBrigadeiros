@@ -271,18 +271,3 @@ $(document).ready(function(){
 
 
   //FIM abrir imagem//
-
-
-
-
-
-  //animar imagem contact//
-
-  VanillaTilt.init(document.querySelectorAll(".imgAnimateContact"), {
-    max: 25,
-    speed: 400,
-    glare: true,
-});
-
-
-  //fim animaçao imagem contact
