@@ -113,6 +113,8 @@ nav {
 
 @media(max-width:900px) {
 
+    
+
     .containerNav1 {
         position: absolute;
         top: 7vh;
@@ -164,8 +166,7 @@ nav {
         transform: rotate(45deg) translate(-5px, -7px);
     }
 
-
-
+    
 
     @keyframes navLinkFade {
         from {
@@ -467,6 +468,10 @@ background-color: #9F132A;
 
 }
 
+.explainMobile{
+    display:none;
+}
+
 
 
 
@@ -749,6 +754,9 @@ footer a{
         text-shadow: 1px 1px black;
     }
 
+
+    
+
     .home h2 {
         text-shadow: 1px 1px black;
     }
@@ -790,16 +798,24 @@ footer a{
 
 
 
+@media(max-width:1100px){
+.hoverImgCD {
+    display: none;
+}
+.explainMobile{
+    display:block;
+}
+.containerCD{
+    margin-left: 0px;
+ }
+
+}
 
 
 
 
 
-
-
-
-
-@media(max-width:800px){
+@media(max-width:768px){
     
     .feedbackBG{
         height:1000px;
@@ -809,9 +825,7 @@ footer a{
         height: 120px;
     }
 
-    .containerCD{
-       margin-left: 0px;
-    }
+    
     .buttonsAbout button {
         width: 100px;
         height: 40px;
@@ -852,9 +866,6 @@ footer a{
       
     }
 
-    .hoverImgCD {
-        display: none;
-    }
 
 
     .feedbackBG h1{
