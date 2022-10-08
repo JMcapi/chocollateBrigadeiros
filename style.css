@@ -559,7 +559,6 @@ background-color: #9F132A;
 }
 
 
-
 .cardfb p i{
     color:#be9342;
 }
@@ -766,6 +765,7 @@ footer a{
     #explain{
     font-size: 15px;
 }
+
     
     .contactContainer{
         height: 800px;
@@ -805,6 +805,9 @@ footer a{
         height:1000px;
     }
 
+    .fb1{
+        height: 120px;
+    }
 
     .containerCD{
        margin-left: 0px;
@@ -856,10 +859,6 @@ footer a{
 
     .feedbackBG h1{
         font-size: 45px;
-    }
-
-    .fb1 {
-        height:90px;
     }
 
 .fb4{
