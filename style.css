@@ -276,7 +276,7 @@ nav {
 .containerAbouttxt p {
 
     margin-top: 70px;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     margin-bottom: 0;
 }
@@ -780,6 +780,7 @@ footer a{
     }
 
     .containerAbouttxt p{
+
         margin-top: 30px;
         font-size: 20px;
     }
@@ -806,7 +807,7 @@ footer a{
 
 
     .containerCD{
-        margin-left: 0px;
+       margin-left: 0px;
     }
     .buttonsAbout button {
         width: 100px;
@@ -852,20 +853,23 @@ footer a{
         display: none;
     }
 
-    .containerCD {
-        margin-right: 0px;
-    }
 
     .feedbackBG h1{
         font-size: 45px;
     }
 
+    .fb1 {
+        height:90px;
+    }
+
+.fb4{
+    height:70px;
+}
     .cardfb p{
         font-size: 15px;
     }
-    .fb1 p{
-        font-size: 13px;
-       }
+
+    
    
     .cardfb{
         width:90%;
@@ -935,8 +939,15 @@ align-items: center;
 
 
 @media(max-height:300px){
+
+    .popupImages .img {
+        width: 50%;
+        height:70%;
+
+      
+    }
     .cardfb p{
-        font-size: 10px;
+        font-size: 9px;
     }
 
     .containerAbouttxt p{
@@ -969,10 +980,8 @@ align-items: center;
         height:70px;
     }
    
-    .fb1 {
-        height:90px;
-        font-size: 8px;
-    }
+   
+
 }
 
 
@@ -1005,7 +1014,7 @@ align-items: center;
 
 @media(max-width:1440px) {
     .degustButton{
-        margin-top:0;
+        margin-top:20px;
         width: 100px;
         height:40px;
     }
