@@ -445,6 +445,7 @@ background-color: #9F132A;
     right: 10px;
     font-size: 60px;
     font-weight: bolder;
+    padding:0px 0px 30px 30px;   
     color: #fff;
     cursor: pointer;
     z-index: 100;
