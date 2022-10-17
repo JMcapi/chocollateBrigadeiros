@@ -8,11 +8,12 @@
     font-family: Chocollate2;
     src: url("assets/aliens_and_cows/aliens\ and\ cows_trial.ttf")
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
 
-html{
+html {
     overflow-x: hidden;
-    
+
 }
 
 body {
@@ -35,13 +36,14 @@ body {
 .logo:hover #logotxt {
     transform: scale(1.05);
 }
-.logoContainer{
+
+.logoContainer {
     position: relative;
-    width:100%;
-    height:100%;
-    display:flex;
+    width: 100%;
+    height: 100%;
+    display: flex;
     align-items: center;
-    
+
 }
 
 
@@ -65,9 +67,14 @@ body {
     height: 30px;
 }
 
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
 .containerNav1,
 nav {
-    position: relative;
     width: 100%;
     height: 7vh;
     display: flex;
@@ -113,7 +120,7 @@ nav {
 
 @media(max-width:900px) {
 
-    
+
 
     .containerNav1 {
         position: absolute;
@@ -131,9 +138,9 @@ nav {
     }
 
 
-    .logoContainer{
+    .logoContainer {
         justify-content: center;
-        margin-left:32px;
+        margin-left: 32px;
     }
 
 
@@ -149,7 +156,7 @@ nav {
 
     .mobileMenu {
         display: block;
-       margin-left: auto;
+        margin-left: auto;
     }
 
 
@@ -166,7 +173,7 @@ nav {
         transform: rotate(45deg) translate(-5px, -7px);
     }
 
-    
+
 
     @keyframes navLinkFade {
         from {
@@ -190,7 +197,6 @@ nav {
 /*INICIO HOME*/
 .home {
     background-image: url(assets/background2.png);
-
     background-size: cover;
     width: 100%;
     height: 94vh;
@@ -198,9 +204,12 @@ nav {
     justify-content: center;
     align-items: center;
     display: flex;
-
 }
-
+.marginHome{
+    width:100%;
+    height:94vh;
+    margin-top: 7vh;
+}
 .home h1 {
     font-family: Chocollate, Helvetica, sans-serif;
     color: #80132a;
@@ -321,10 +330,10 @@ nav {
     transition: .4s;
 }
 
-.buttonsAbout button:hover{
-background-color: #9F132A;
+.buttonsAbout button:hover {
+    background-color: #9F132A;
     color: white;
-} 
+}
 
 
 
@@ -391,10 +400,12 @@ background-color: #9F132A;
     border-radius: 2px;
     transition: .4s
 }
-.degustButton:hover{
+
+.degustButton:hover {
     background-color: #9F132A;
-        color: white;
-    } 
+    color: white;
+}
+
 .containerCD {
     display: flex;
     justify-content: center;
@@ -445,7 +456,7 @@ background-color: #9F132A;
     right: 10px;
     font-size: 60px;
     font-weight: bolder;
-    padding:0px 0px 30px 30px;   
+    padding: 0px 0px 30px 30px;
     color: #fff;
     cursor: pointer;
     z-index: 100;
@@ -469,8 +480,8 @@ background-color: #9F132A;
 
 }
 
-.explainMobile{
-    display:none;
+.explainMobile {
+    display: none;
 }
 
 
@@ -499,7 +510,7 @@ background-color: #9F132A;
 }
 
 
-.feedbackBG h1{
+.feedbackBG h1 {
     font-family: Chocollate, Helvetica, sans-serif;
     color: #80132a;
     font-weight: 80;
@@ -510,63 +521,65 @@ background-color: #9F132A;
 
 }
 
-.containerFeedBacks{
-    display:flex;
+.containerFeedBacks {
+    display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
     padding-top: 50px;
-    padding-bottom:50px;
+    padding-bottom: 50px;
 }
 
-.double1, .double2{
-    display:flex;
+.double1,
+.double2 {
+    display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     flex-direction: column;
-    
+
 }
 
-.cardfb{
+.cardfb {
     background: linear-gradient(45deg, #fff, #f0ebe7);
     background-size: cover;
     margin: 0px 30px 30px 30px;
-    width:600px;
-    height:15vh;
+    width: 600px;
+    height: 15vh;
     border: 1px solid #4d0110;
     border-radius: 3px;
     overflow: hidden;
 }
 
 
-.double1 img, .double2 img{
-    width:50px;
-  border: 1px solid #be9342;
+.double1 img,
+.double2 img {
+    width: 50px;
+    border: 1px solid #be9342;
     border-radius: 50%;
     margin-right: 10px;
 }
 
 
-.ident{
-    display:flex;
-    width:89%;
+.ident {
+    display: flex;
+    width: 89%;
     height: 80%;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.ident h3{
-    color:#be9342;
+.ident h3 {
+    color: #be9342;
     font-weight: 400;
     text-shadow: 1px 1px black;
 
 }
 
 
-.cardfb p i{
-    color:#be9342;
+.cardfb p i {
+    color: #be9342;
 }
 
 
@@ -577,15 +590,15 @@ background-color: #9F132A;
 
 
 /*INICIO CONTATOS*/
-.contactContainer{
-color: #80132a;
+.contactContainer {
+    color: #80132a;
     font-size: 20px;
     border-top: 1px solid #4d0110;
     text-align: center;
     width: 100%;
     height: 95vh;
     background: linear-gradient(90deg, #a19387, #d4ceca);
-    
+
 }
 
 .contactContainer h1 {
@@ -599,88 +612,88 @@ color: #80132a;
 }
 
 
-.containerMainContact{
-    width:100%;
-    height:100%;
-    display:flex;
+.containerMainContact {
+    width: 100%;
+    height: 100%;
+    display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: row;
-    
-    
+
+
 }
 
 
 
 
-.contactsB{
+.contactsB {
     margin-right: 8vw;
-    position:relative;
-    display:flex;
+    position: relative;
+    display: flex;
     flex-direction: column;
     border-radius: 10px;
     font-family: 'Open Sans', sans-serif;
     color: #80132a;
     font-weight: 80;
-   
+
     font-size: 18px;
     text-shadow: 1px 1px black;
 }
 
-.contactsB h3{
+.contactsB h3 {
 
-    margin-bottom:50px;
+    margin-bottom: 50px;
 }
 
 
-.contactsB button{
-    cursor:pointer;
+.contactsB button {
+    cursor: pointer;
     border: none;
     width: 360px;
     height: 60px;
-    margin:auto;
+    margin: auto;
     margin-top: 0;
     margin-bottom: 40px;
     border-radius: 7px;
-    
+
 }
 
-.contactsB #wpp{
-    color:white;
+.contactsB #wpp {
+    color: white;
     background-color: #14ad75;
-    border:2px solid #098356;
+    border: 2px solid #098356;
     font-weight: bolder;
     font-size: 20px;
 }
 
-.contactsB #wpp:hover{
-    background:linear-gradient(45deg, #03a757 80%, #E5FFCC);
+.contactsB #wpp:hover {
+    background: linear-gradient(45deg, #03a757 80%, #E5FFCC);
 }
 
 
-.contactsB #insta{
-    color:white;
-    font-weight:bolder;
+.contactsB #insta {
+    color: white;
+    font-weight: bolder;
     border: 1px solid #4d0110;
- font-size:20px;
- background:radial-gradient(circle at 30%, #fd5949 10%,#d6249f 60%,#285AEB 90%);
- 
+    font-size: 20px;
+    background: radial-gradient(circle at 30%, #fd5949 10%, #d6249f 60%, #285AEB 90%);
+
 }
 
-.contactsB #insta:hover{
-    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+.contactsB #insta:hover {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
 }
 
-.contactsB #face{
-    color:white;
+.contactsB #face {
+    color: white;
     background-color: #4267B2;
-    border:2px solid #1C3977;
+    border: 2px solid #1C3977;
     font-weight: bolder;
     font-size: 20px;
 }
 
-.contactsB #face:hover{
-    background:linear-gradient(45deg, #3b5998 90%, #FFFFFF);
+.contactsB #face:hover {
+    background: linear-gradient(45deg, #3b5998 90%, #FFFFFF);
 }
 
 
@@ -690,11 +703,11 @@ color: #80132a;
 
 
 
-.imgContact img{
+.imgContact img {
     border: 2px solid #4d0110;
     border-radius: 50%;
-    width:400px;
- 
+    width: 400px;
+
 }
 
 
@@ -706,34 +719,35 @@ color: #80132a;
 
 
 /*INICIO FOOTER*/
-footer{
-width:100%;
-height:24vh;
-background-color: #57524f;
-text-align: center;
-display:flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-text-shadow: 1px 1px black;
-margin:0;
+footer {
+    width: 100%;
+    height: 24vh;
+    background-color: #57524f;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-shadow: 1px 1px black;
+    margin: 0;
 
 }
 
-footer h3{
+footer h3 {
     font-family: 'Open Sans', sans-serif;
-    color:#d4ceca;
-font-size: 12px;
+    color: #d4ceca;
+    font-size: 12px;
 }
 
-footer strong{
-    color:#4d0110;
+footer strong {
+    color: #4d0110;
 }
 
-footer strong:hover{
+footer strong:hover {
     color: #d38089;
 }
-footer a{
+
+footer a {
     text-decoration: none;
 }
 
@@ -749,14 +763,14 @@ footer a{
 
 
 
-@media(max-height:900px){
-   
+@media(max-height:900px) {
+
     .home h1 {
         text-shadow: 1px 1px black;
     }
 
 
-    
+
 
     .home h2 {
         text-shadow: 1px 1px black;
@@ -766,74 +780,76 @@ footer a{
         width: 100px;
         height: 40px;
     }
-    
-    .cardapio{
-        height:900px;
+
+    .cardapio {
+        height: 900px;
     }
 
-    #explain{
-    font-size: 15px;
-}
+    #explain {
+        font-size: 15px;
+    }
 
-    
-    .contactContainer{
+
+    .contactContainer {
         height: 800px;
     }
 
-    .cardfb p{
+    .cardfb p {
         font-size: 13px;
     }
 
-    .buttonsAbout{
+    .buttonsAbout {
         margin-top: 10px;
     }
 
-    .containerAbouttxt p{
+    .containerAbouttxt p {
 
         margin-top: 30px;
         font-size: 20px;
     }
 
-    
-}
-
-
-
-@media(max-width:1100px){
-.hoverImgCD {
-    display: none;
-}
-.explainMobile{
-    display:block;
-}
-.containerCD{
-    margin-left: 0px;
- }
 
 }
 
 
 
-
-
-@media(max-width:768px){
-    
-    .feedbackBG{
-        height:1000px;
+@media(max-width:1100px) {
+    .hoverImgCD {
+        display: none;
     }
 
-    .fb1{
+    .explainMobile {
+        display: block;
+    }
+
+    .containerCD {
+        margin-left: 0px;
+    }
+
+}
+
+
+
+
+
+@media(max-width:768px) {
+
+    .feedbackBG {
+        height: 1000px;
+    }
+
+    .fb1 {
         height: 120px;
     }
 
-    
+
     .buttonsAbout button {
         width: 100px;
         height: 40px;
     }
 
     .imgCont {
-        height:20%;
+        height: 20%;
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: local;
@@ -862,77 +878,79 @@ footer a{
 
     .popupImages .img {
         width: 90%;
-        height:50%;
+        height: 50%;
 
-      
+
     }
 
 
 
-    .feedbackBG h1{
+    .feedbackBG h1 {
         font-size: 45px;
     }
 
-.fb4{
-    height:70px;
-}
-    .cardfb p{
+    .fb4 {
+        height: 70px;
+    }
+
+    .cardfb p {
         font-size: 15px;
     }
 
-    
-   
-    .cardfb{
-        width:90%;
+
+
+    .cardfb {
+        width: 90%;
     }
 
-    .feedbackBG{
-        height:150vh;
+    .feedbackBG {
+        height: 150vh;
     }
 
-    .contactContainer h1{
+    .contactContainer h1 {
         font-size: 45px;
     }
-    
-    .imgContact, .contactContainer h1{
-        display:none;
+
+    .imgContact,
+    .contactContainer h1 {
+        display: none;
     }
 
-    .dpn-1{
-        display:none;
+    .dpn-1 {
+        display: none;
     }
 
-    .contactContainer{
+    .contactContainer {
         height: 100vh;
     }
 
-    .contactsB{
-        
-        margin:0;
+    .contactsB {
+
+        margin: 0;
     }
 
-    .containerMainContact{
-        width:100%;
-        height:100%;
+    .containerMainContact {
+        width: 100%;
+        height: 100%;
         background-image: url(assets/contactbg.png);
         background-position: center;
         background-size: cover;
         background-attachment: local;
         background-repeat: no-repeat;
         margin-top: 0;
-    display:flex;
-    justify-content: center;
-align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .containerMainContact button{
+    .containerMainContact button {
         width: 200px;
-        height:60px;
-        
+        height: 60px;
+
     }
- 
-    .contactsB #insta{
-        background:radial-gradient(circle at 30%, #fd5949 10%,#d6249f 60%,#285AEB 90%);
+
+    .contactsB #insta {
+        background: radial-gradient(circle at 30%, #fd5949 10%, #d6249f 60%, #285AEB 90%);
     }
 }
 
@@ -949,49 +967,55 @@ align-items: center;
 
 
 
-@media(max-height:300px){
+@media(max-height:300px) {
 
     .popupImages .img {
         width: 50%;
-        height:70%;
+        height: 70%;
 
-      
+
     }
-    .cardfb p{
+
+    .cardfb p {
         font-size: 9px;
     }
 
-    .containerAbouttxt p{
+    .containerAbouttxt p {
         margin-top: 20px;
         font-size: 14px;
     }
-    .buttonsAbout{
+
+    .buttonsAbout {
         margin-top: 10px;
     }
-    .mobileMenu div{
+
+    .mobileMenu div {
         width: 25px;
-        margin:5px;
+        margin: 5px;
     }
-    .background1{
-        height:10vh;
+
+    .background1 {
+        height: 10vh;
     }
-    .aboutBG h1{
+
+    .aboutBG h1 {
         font-size: 50px;
     }
-    .contactContainer{
+
+    .contactContainer {
         height: 500px;
     }
 
-    .containerMainContact button{
+    .containerMainContact button {
         margin-bottom: 5px;
     }
 
 
-    .cardfb{
-        height:70px;
+    .cardfb {
+        height: 70px;
     }
-   
-   
+
+
 
 }
 
@@ -1001,40 +1025,42 @@ align-items: center;
 
 
 
-@media(max-width:1370px){
-    .feedbackBG{
-        height:100vh    ;
+@media(max-width:1370px) {
+    .feedbackBG {
+        height: 100vh;
     }
 
-    .cardfb p{
+    .cardfb p {
         font-size: 15px;
     }
-    .contactContainer{
-        height:600px
+
+    .contactContainer {
+        height: 600px
     }
 
-    
+
 }
 
-@media(max-width:1340px){
-    .feedbackBG{
-        height:1000px;
+@media(max-width:1340px) {
+    .feedbackBG {
+        height: 1000px;
     }
 }
 
 
 @media(max-width:1440px) {
-    .degustButton{
-        margin-top:20px;
+    .degustButton {
+        margin-top: 20px;
         width: 100px;
-        height:40px;
+        height: 40px;
     }
+
     .foodContainer h1 {
         font-size: 30px;
     }
 
     .titleC h1 {
-       
+
         font-size: 45px;
         text-shadow: 2px 2px black;
     }
