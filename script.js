@@ -2,26 +2,27 @@
 AOS.init();
 
 
-//COMEÇO NAVBAR RESPONSIVA --> 
+//COMECO NAVBAR RESPONSIVA --> 
+
 
 class MobileNavbar {
-    constructor(mobileMenu, navList, navLinks) {
-        this.mobileMenu = document.querySelector(mobileMenu);
-        this.navList = document.querySelector(navList);
-        this.navLinks = document.querySelectorAll(navLinks);
-        this.activeClass = "active";
+  constructor(mobileMenu, containerNav1, navOptions) {
+      this.mobileMenu = document.querySelector(mobileMenu);
+      this.navList = document.querySelector(containerNav1);
+      this.navLinks = document.querySelectorAll(navOptions);
+    
+      this.activeClass = "active";
+      this.handleClick = this.handleClick.bind(this);
+  }
 
-        this.handleClick = this.handleClick.bind(this);
-    }
+
 
 handleClick(){
-    this.navList.classList.toggle(this.activeClass);
-    this.mobileMenu.classList.toggle(this.activeClass);
-    this.animateLinks();
+  this.navList.classList.toggle(this.activeClass);
+  this.mobileMenu.classList.toggle(this.activeClass);
+ 
+  this.animateLinks();
 }
-
-
-
 
 animateLinks() {
 this.navLinks.forEach((link, index) => {
@@ -33,25 +34,36 @@ link.style.animation
 
 
 
-
-    addClickEvent(){
-        this.mobileMenu.addEventListener("click", this.handleClick);
-    }
+  addClickEvent(){
+      this.mobileMenu.addEventListener("click", this.handleClick);
+      this.navList.addEventListener("click", this.handleClick);
+  }
  
-    init() {
-        if (this.mobileMenu) {
-            this.addClickEvent();
-        }
-        return this;
-    }
+  init() {
+      if (this.mobileMenu) {
+          this.addClickEvent();
+      }
+      return this;
+  }
+
 }
 
 const mobileNavbar = new MobileNavbar(
-    ".mobileMenu",
-    ".containerNav1",
-    ".containerNav1 a",
+  ".mobileMenu",
+  ".containerNav1",
+  ".navOptions",
 );
+
+
+
+
 mobileNavbar.init(); 
+
+
+
+
+
+
 
 //FIM NAVBAR RESPONSIVA --> 
 

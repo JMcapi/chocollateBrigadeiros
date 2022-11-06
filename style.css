@@ -126,15 +126,17 @@ nav {
         position: absolute;
         top: 7vh;
         right: 0;
-        width: 60vw;
+        width: 100vw;
         height: 92vh;
-        background: #80132a;
+        background: #8a0d28c7 ;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
         transform: translateX(100%);
         opacity: 0;
         transition: .5s ease-in-out;
+       
+     
     }
 
 
@@ -152,6 +154,12 @@ nav {
     .containerNav1 a {
         margin: 0;
         opacity: 0;
+        color: #d4d4d4;
+        padding: 5%;
+    }
+
+    .containerNav1 a:hover{
+        color:#d38089;
     }
 
     .mobileMenu {
@@ -272,11 +280,6 @@ nav {
 
 }
 
-.aboutBG h1 {
-    font-family: Chocollate2, Helvetica, sans-serif;
-    text-transform: uppercase;
-}
-
 .containerAbouttxt {
     width: 600px;
     margin: auto;
@@ -292,6 +295,8 @@ nav {
 }
 
 .imgCont h1 {
+    font-family: Chocollate2, Helvetica, sans-serif;
+    text-transform: uppercase;
     font-size: 100px;
     margin: 0;
     text-shadow: 1px 1px black;
@@ -549,7 +554,11 @@ nav {
     border: 1px solid #4d0110;
     border-radius: 3px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 
 .double1 img,
@@ -722,7 +731,7 @@ nav {
 footer {
     width: 100%;
     height: 24vh;
-    background-color: #57524f;
+    background-color: #4d0110;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -740,7 +749,7 @@ footer h3 {
 }
 
 footer strong {
-    color: #4d0110;
+    color: #57524f;
 }
 
 footer strong:hover {
@@ -825,7 +834,8 @@ footer a {
     .containerCD {
         margin-left: 0px;
     }
-
+ 
+ 
 }
 
 
@@ -833,10 +843,6 @@ footer a {
 
 
 @media(max-width:768px) {
-
-    .feedbackBG {
-        height: 1000px;
-    }
 
     .fb1 {
         height: 120px;
@@ -856,7 +862,14 @@ footer a {
 
 
     }
-
+    
+    .imgCont h1 {
+        font-size: 50px;
+       color: #bb032b;
+       background-color:  #d3808aa6;
+       box-shadow: 2px 2px 2px 2px #00000090;
+    }
+    
     .containerAbouttxt {
         width: 95%;
         margin: auto;
@@ -889,9 +902,7 @@ footer a {
         font-size: 45px;
     }
 
-    .fb4 {
-        height: 70px;
-    }
+    
 
     .cardfb p {
         font-size: 15px;
@@ -903,9 +914,7 @@ footer a {
         width: 90%;
     }
 
-    .feedbackBG {
-        height: 150vh;
-    }
+   
 
     .contactContainer h1 {
         font-size: 45px;
@@ -997,10 +1006,7 @@ footer a {
     .background1 {
         height: 10vh;
     }
-
-    .aboutBG h1 {
-        font-size: 50px;
-    }
+   
 
     .contactContainer {
         height: 500px;
@@ -1012,7 +1018,7 @@ footer a {
 
 
     .cardfb {
-        height: 70px;
+        height: 90px;
     }
 
 
@@ -1024,11 +1030,8 @@ footer a {
 
 
 
-
 @media(max-width:1370px) {
-    .feedbackBG {
-        height: 100vh;
-    }
+    
 
     .cardfb p {
         font-size: 15px;
@@ -1038,14 +1041,15 @@ footer a {
         height: 600px
     }
 
-
+   
 }
 
-@media(max-width:1340px) {
+@media(max-width:1340px){
     .feedbackBG {
-        height: 1000px;
+        height: 1200px;
     }
 }
+
 
 
 @media(max-width:1440px) {
@@ -1065,9 +1069,4 @@ footer a {
         text-shadow: 2px 2px black;
     }
 
-    .imgCont h1 {
-        font-size: 80px;
-        margin: 0;
-        text-shadow: 1px 1px black;
-    }
 }
